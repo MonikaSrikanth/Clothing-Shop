@@ -71,7 +71,7 @@ const CartSection = () => {
     }
   
     try {
-      const response = await fetch("http://localhost:5000/api/order/place", {
+      const response = await fetch("http://clothing-shop-b04x.onrender.com/api/order/place", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

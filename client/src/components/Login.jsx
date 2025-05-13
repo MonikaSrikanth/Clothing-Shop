@@ -43,7 +43,7 @@ const Auth = () => {
     const payload = isSignup ? { name, email, password } : { email, password };
 
     try {
-      const response = await fetch(`http://localhost:5000/api/${endpoint}`, {
+      const response = await fetch(`https://clothing-shop-b04x.onrender.com/api/${endpoint}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
