@@ -1,7 +1,10 @@
 // db.js
+require('dotenv').config();
 const mongoose = require("mongoose");
+const uri = process.env.URI;
+console.log("Loaded URI:", process.env.URI);
 
-mongoose.connect("mongodb+srv://monikasrikanth03:Monika03@cluster1.njwzmex.mongodb.net/clothing-shop?retryWrites=true&w=majority&appName=Cluster1", {
+mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
